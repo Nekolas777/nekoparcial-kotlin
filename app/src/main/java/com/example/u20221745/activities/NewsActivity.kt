@@ -1,6 +1,8 @@
 package com.example.u20221745.activities
 
+import android.annotation.SuppressLint
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
@@ -19,6 +21,7 @@ class NewsActivity : AppCompatActivity() {
 
     var newsService = NewsServiceFactory().createNewsServiceInstance()
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -29,6 +32,7 @@ class NewsActivity : AppCompatActivity() {
             insets
         }
 
+
         val edNewsName = findViewById<EditText>(R.id.edNewsName)
         val btnSearchNews = findViewById<Button>(R.id.btnSearchNews)
 
@@ -36,6 +40,22 @@ class NewsActivity : AppCompatActivity() {
             lifecycleScope.launch {
                 getNews(edNewsName.text.toString())
             }
+        }
+
+        val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.tbFindNews)
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            android.R.id.home -> {
+                // Handle the back button press
+                onBackPressed()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
         }
     }
 

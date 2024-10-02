@@ -20,4 +20,6 @@
     <string name="google">google</string>
     <string name="favorite_button_news">favorite_button_news</string>
     <string name="button_detail_news">button_detail_news</string>
+    <string name="register_favorite">register favorite</string>
+    <string name="url_website">URL Website</string>
 </resources>

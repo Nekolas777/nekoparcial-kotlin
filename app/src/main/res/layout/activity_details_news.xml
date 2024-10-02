@@ -23,7 +23,7 @@
     <ImageView
         android:id="@+id/ivNewsDetails"
         android:layout_width="0dp"
-        android:layout_height="200dp"
+        android:layout_height="250dp"
         android:contentDescription="@string/news_image_detail"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,6 +40,8 @@
         android:layout_marginEnd="20dp"
         android:text="@string/news_source"
         android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivNewsDetails" />
@@ -56,4 +58,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvSourceNewsDetail" />
+
+    <Button
+        android:id="@+id/btnRegisterFavoriteDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/register_favorite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNewsContentDetail" />
+
+    <Button
+        android:id="@+id/btnWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/url_website"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNewsContentDetail" />
 </androidx.constraintlayout.widget.ConstraintLayout>
