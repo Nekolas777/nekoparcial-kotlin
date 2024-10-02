@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">u20221745</string>
+    <string name="newsly_enterprise">Newsly Enterprise</string>
+    <string name="main_banner">main_banner</string>
+    <string name="find_news">Find news</string>
+    <string name="favorite_news">Favorite news</string>
+    <string name="news_image">news_image</string>
+    <string name="autor">autor</string>
+    <string name="a_o_de_publicacion">año de publicacion</string>
+    <string name="titulo">titulo</string>
+    <string name="author">author</string>
+    <string name="title">title</string>
+    <string name="description">description</string>
+    <string name="button_favorite">button_favorite</string>
+    <string name="news_favorite_image">news_favorite_image</string>
+    <string name="news_image_detail">news_image_detail</string>
+    <string name="news_source">news source</string>
+    <string name="news_content">news content</string>
+    <string name="search_news">Search news</string>
+    <string name="google">google</string>
+    <string name="favorite_button_news">favorite_button_news</string>
+    <string name="button_detail_news">button_detail_news</string>
+</resources>
